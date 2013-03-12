@@ -6,18 +6,16 @@ public class Main {
 	ImageCreation IC = new ImageCreation();
     IC.Welcome();
     IC.CountArgs(args);
-    IC.TestingArgs(args);
-    IC.CreateRedImage(10, 10, "Hello");
-    /*if(args[2] == "red"){
+    if(args[2].equals("red")){
         IC.CreateRedImage(xCrd, yCrd, args[3]);
-    } else if (args[2] == "blue"){
+    } else if (args[2].equals("blue")){
         IC.CreateBlueImage(xCrd, yCrd, args[3]);
-    } else if (args[2] == "green") {
+    } else if (args[2].equals("green")) {
         IC.CreateGreenImage(xCrd, yCrd, args[3]);
     } else {
         IC.Puts("Only red, green and blue are acceptable ");
         System.exit(1);
-    } */
+    }
 
     }
 }

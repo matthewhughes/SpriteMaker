@@ -69,10 +69,5 @@ public class ImageCreation {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
     }
-    void TestingArgs(String[] args){
-        for(int i = 0; i < args.length; i++){
-            Puts(args[i]);
-        }
-    }
 
 }
