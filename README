@@ -1,1 +1,5 @@
-This file was created by IntelliJ IDEA 12.0.4 for binding GitHub repository
+A simple tool to create sprites for Bearcat.
+
+Usage is Height | Width| (red | green| blue) | filename
+
+All images are outputted as PNG files.

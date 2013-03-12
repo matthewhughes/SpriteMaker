@@ -38,9 +38,11 @@ public class ImageCreation {
     }
     void CreateRedImage(int xSize, int ySize, String FileName){
         BufferedImage bf = new BufferedImage(xSize, ySize, BufferedImage.TYPE_INT_RGB);
-        Color color = new Color(225, 000, 000);
+        Color color = new Color(255, 000, 000);
+        Graphics g2d = bf.createGraphics();
+        g2d.setColor(color);
+        g2d.fillRect ( 0, 0, bf.getWidth(), bf.getHeight() );
         File f = new File(FileName + ".png");
-        bf.setRGB(xSize, ySize, color.getRGB());
         try {
             ImageIO.write(bf, "PNG", f);
         } catch (IOException e) {
@@ -50,7 +52,9 @@ public class ImageCreation {
     void CreateBlueImage(int xSize, int ySize, String FileName){
         BufferedImage bf = new BufferedImage(xSize, ySize, BufferedImage.TYPE_INT_RGB);
         Color color = new Color(000, 000, 255);
-        bf.setRGB(xSize, ySize, color.getRGB());
+        Graphics g2d = bf.createGraphics();
+        g2d.setColor(color);
+        g2d.fillRect ( 0, 0, bf.getWidth(), bf.getHeight() );
         File f = new File(FileName + ".png");
         try {
             ImageIO.write(bf, "PNG", f);
@@ -61,7 +65,9 @@ public class ImageCreation {
     void CreateGreenImage(int xSize, int ySize, String FileName){
         BufferedImage bf = new BufferedImage(xSize, ySize, BufferedImage.TYPE_INT_RGB);
         Color color = new Color(000, 255, 000);
-        bf.setRGB(xSize, ySize, color.getRGB());
+        Graphics g2d = bf.createGraphics();
+        g2d.setColor(color);
+        g2d.fillRect ( 0, 0, bf.getWidth(), bf.getHeight() );
         File f = new File(FileName + ".png");
         try {
             ImageIO.write(bf, "PNG", f);
